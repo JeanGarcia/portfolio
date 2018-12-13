@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage":"http://JeanGarcia.github.io/portfolio",
+  "homepage":"http://jeangarcia.github.io/portfolio",
   "private": true,
   "dependencies": {
     "react": "^16.6.3",
