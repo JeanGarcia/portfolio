@@ -1,5 +1,5 @@
 # [START gae_python38_app]
-from flask import Flask, send_from_directory
+from flask import Flask, render_template
 import os 
 
 
@@ -7,13 +7,10 @@ import os
 # called `app` in `main.py`.
 app = Flask(__name__, static_url_path='/static')
 
-# building path of react app.
-react_path = "react"
-
 # Default entrypoint for the React App.
 @app.route('/')
 def hello():
-    return  app.send_static_file(os.path.join(react_path, "index.html").replace('\\','/')) 
+    return  render_template("index.html")
 
 
 if __name__ == '__main__':
